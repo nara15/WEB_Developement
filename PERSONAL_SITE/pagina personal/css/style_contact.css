@@ -1,42 +1,5 @@
 @charset "utf-8";
-/*
- Knight Bootstrap theme by BootstrapTaste.com
- Theme URI: http://bootstraptaste.com/knight-free-bootstrap-theme/
- Author: BootstrapTaste
- Author URI: http://bootstraptaste.com
- */
- 
-/* CSS Document */
 
-/* Float Elements 
----------------------------------*/
-.fl-lt {float:left;}
-.fl-rt {float:right;}
-
-/* Clear Floated Elements
----------------------------------*/
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:after {
-  clear: both;
-}
 
 .figure{ margin:0px;}
 
@@ -44,7 +7,8 @@ img{ max-width:100%;}
 
 a, a:hover, a:active{ outline:0px !important}
 
-@font-face {
+@font-face 
+{
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
@@ -100,17 +64,45 @@ p{
 ---------------------------------*/
 .main-section.contact
 {
-	padding:90px 0 100px;
+	padding-top: 100px;
+	padding-left: 90px;
+	padding-bottom: 50px;
 	margin: 0 auto;
+	display: inline-block;
+
+}
+
+.main-section.contact h2
+{
+	padding-bottom: 50px;
 }
 
 .main-section.contact
 {
-	background:url(../img/bg-map.png) left 190px no-repeat;
+	
 }
-.contact-info-box{
+
+
+.left
+{
+	float: left;
+	width: 620px;
+	margin-left: 75px;
+}
+
+.right
+{
+	float: left;
+	width: 820px;
+}
+
+
+
+.contact-info-box
+{
+	background:url(../img/bg-splash.png) left 190px no-repeat;
 	font-size:15px;
-	margin:0 0 14px 68px;
+	margin:0 0 14px 15px;
 	padding-left:0;
 }
 .contact-info-box h3{
@@ -134,55 +126,12 @@ p{
 	display:block;
 	overflow:hidden;
 }
-.social-link{
-	padding:35px 0;
-	margin:0 0 0 68px;
-	display:block;
-	overflow:hidden;
-	list-style:none;
-}
-.social-link li
-{
-	float:left;
-	margin-right:8px;
-}
-.social-link li a
-{
-	display:block;
-	width:50px;
-	height:50px;
-	text-align:center;
-	line-height:50px;
-	font-size:25px;
-	color:#fff;
-	background:#222222;
-	border-radius:50%;
-	transition:all 0.3s ease-in-out;
-}
-.social-link li a:hover, .social-link li a:focus{
-	text-decoration:none;
-}
-.twitter a:hover {
-	background: #55acee;
-}
-.facebook a:hover {
-	background: #3b5998;
-}
-.pinterest a:hover {
-	background: #cb2026;
-}
-.gplus a:hover {
-	background: #dd4b39;
-}
-.dribbble a:hover {
-	background: #ea4c89;
-}
 
 .form{
-	margin:0 66px 0 30px;
+	margin:0 10px 0 10px;
 }
 .input-text{
-	padding:15px 16px;
+	padding:5px 16px;
 	border:1px solid #ccc;
 	width:100%;
 	height:50px;
@@ -232,6 +181,7 @@ p{
 .footer{
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
 	padding:35px 0 35px;
+	clear: both
 }
 .footer-logo{
 	margin:15px auto 35px;
@@ -254,24 +204,5 @@ p{
 	color: #fff;
 }
 
-.res-nav_click {
-	line-height:38px;
-	font-family: 'FontAwesome';
-	font-size:38px;
-	text-decoration: none !important;
-	color:#777777;
-	font-style:normal;
-	display:none;
-	width:42px;
-	height:27px;
-	margin:20px auto;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-}
-
-.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color: #7cc576 !important;
-}
 
 
