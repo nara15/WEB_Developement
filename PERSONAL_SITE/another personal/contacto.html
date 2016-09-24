@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Static Page Layout Example</title>
+		<link rel="stylesheet" href="css/contacto.css">
+		<link rel="stylesheet" href="css/header.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Static Layout Example</h1>
+			<header>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="info_personal.html">Información personal</a></li>
+				  <li><a href="">Portafolio</a></li>
+				  <li><a class="active" href="">Contacto</a></li>
+				</ul>
+			</header>
+			<nav>	
+				<img class="totoro" src="img/totoro.gif">
+			</nav>
+			<section>
+				<div class = "contact-info-box ">
+					<div class="form">
+						<input class="input-text" type="text" name="" value="Tu Nombre *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+						<input class="input-text" type="text" name="" value="Tu E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+						
+						<h1>Tipo de Consulta</h1>
+						<input type="radio" name="razon" value="datoPersonal">Datos personales <br>
+						<input type="radio" name="razon" value="proyecto">Información sobre proyectos <br>
+						<input type="radio" name="razon" value="otro">Otra razón <br> <br>
+					
+						<textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+						<input class="input-btn" type="submit" value="send message">
+					</div>	
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

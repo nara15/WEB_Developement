@@ -1,0 +1,73 @@
+
+body {
+  background: #2980b9;
+  color: #FFF;
+  font-family: Helvetica;
+  text-align: center;
+  margin: 0;
+}
+
+header,
+nav,
+section 
+{
+  border: 1px solid rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+header 
+{
+  padding: 20px 0;
+}
+
+nav, 
+section 
+{
+  padding: 50px 0;
+}
+
+
+.wrapper 
+{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header 
+{
+	width: 1200px;
+}
+
+nav, section 
+{
+  float: left;
+}
+
+nav 
+{
+  width: 320px;
+  margin-right: 10px;
+}
+
+.left
+{
+  width: 600px;
+}
+
+.right
+{
+	width: 590px;
+}
+
+
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

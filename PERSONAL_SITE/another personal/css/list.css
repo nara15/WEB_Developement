@@ -1,0 +1,28 @@
+.lista
+{
+  font-size:14px;
+  margin-bottom:40px;
+  margin: 20px;
+}
+.col1
+{
+  float:left;
+  width:60px;
+}
+.col2 h3
+{
+	text-transform:uppercase;
+}
+.col2 p
+{
+	text-align: center;
+}
+.col1 i
+{
+  font-style:normal;
+  font-size:38px;
+  display:block;
+  color:#222;
+  font-family: 'FontAwesome';
+  line-height:38px;
+}
