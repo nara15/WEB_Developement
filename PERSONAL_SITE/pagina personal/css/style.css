@@ -1,44 +1,11 @@
 @charset "utf-8";
 
  
-/* CSS Document */
-
-/* Float Elements 
----------------------------------*/
-.fl-lt {float:left;}
-.fl-rt {float:right;}
-
-/* Clear Floated Elements
----------------------------------*/
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:after
- {
-  clear: both;
-}
 
 .figure{ margin:0px;}
 
 img{ max-width:100%;}
 
-a, a:hover, a:active{ outline:0px !important}
 
 @font-face {
   font-family: 'FontAwesome';
@@ -48,7 +15,7 @@ a, a:hover, a:active{ outline:0px !important}
   font-style: normal;
 }
 
-/* Primary Styles
+/* Estilos primarios
 ---------------------------------*/
 body 
 {
@@ -123,13 +90,13 @@ p
 	color:#fff;
 }
 
-.we-create
+.bienvenida
 {
 	padding:0;
 	margin:35px 0 55px;
 }
 
-.we-create li
+.bienvenida li
 {
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
@@ -139,10 +106,6 @@ p
 	font-weight: 400;
 	margin:0 5px 0 0;
 	padding:0 0 0 15px;
-}
-.we-create li:first-child
-{
-	background:none;
 }
 
 .start-button 
@@ -183,7 +146,7 @@ color: #fff;
 	color:#fff !important;
 }
 
-/* Navigation
+/* Navigación
 ---------------------------------*/
 .main-nav-outer
 {
@@ -285,9 +248,7 @@ color: #fff;
 {
 	overflow:hidden;	
 }
-.main-section.alabaster{
-	background:#fafafa;
-}
+
 
 
 
