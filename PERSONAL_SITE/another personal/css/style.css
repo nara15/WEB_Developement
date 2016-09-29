@@ -1,5 +1,5 @@
 /**************************************
-CSS PARA LAYOUT ESTÁTICO
+CSS PARA LAYOUT ESLÁSTICO
 **************************************/
 
 body 
@@ -13,28 +13,28 @@ body
 
 .wrapper 
 {
-  width: 1200px;
+  width: 75em;
   margin: 0 auto;
 }
 
 nav, section 
 {
   float: left;
-  padding: 80px 0;
+  padding: 5em 0;
 }
 
 nav 
 {
-  width: 320px;
-  margin-right: 10px;
+  width: 20em;
+  margin-right: 0.625em;
   background-color: #000 ;
 }
 
 section 
 {
-  width: 870px;
+  width: 54.375em;
   display: block;
-  padding-top: 50px;
+  padding-top: 3.125em;
 }
 
 
@@ -46,29 +46,22 @@ section
 .left
 {
   float: left;
-  width: 430px;
-  margin-left: 7px;
+  width: 26.875em;
+  margin-left: 0.4375em;
 }
 
 .right
 {
   float: right;
-  width: 430px;
-  padding-top: 40px;
+  width: 25em;
+  padding-top: 2.5em;
 }
 
 .photo
 {
-  width: 300px;
-  height: 400px;
+  width: 18.75em;
+  height: 25em;
 }
-
-
-
-
-
-
-
 
 
 
@@ -89,6 +82,6 @@ nav,
 section
 {
   border: 1px solid rgba(255,255,255,0.8);
-  margin-bottom: 10px;
-  border-radius: 3px;
+  margin-bottom: 0.625em;
+  border-radius: 0.1875em;
 }
