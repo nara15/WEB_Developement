@@ -1,0 +1,5 @@
+En esta carpeta se encuentra
+
+- another personal : código fuente de la página personal
+
+- PRIVATE : Todo lo relacionado con la parte privada de administración del sitio
