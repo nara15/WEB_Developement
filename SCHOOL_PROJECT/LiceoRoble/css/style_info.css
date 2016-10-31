@@ -15,9 +15,10 @@
 
 
 
-/*----blog----*/
+/*----INFORMACIÓN----*/
 .info-item-header h3,
-.info-item-header ul li a{
+.info-item-header ul li a
+{
 	font-family: 'Open Sans', sans-serif;
 	color: #94CB32;
 	display: inline-block;
@@ -32,6 +33,7 @@
 .info-item-header ul
 {
 	background-color: white;
+	z-index: 1;
 }
 .info-item-header ul li
 {
@@ -61,33 +63,6 @@
 	font-size: 1.5em;
 	padding: 10px 0px 10px 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
