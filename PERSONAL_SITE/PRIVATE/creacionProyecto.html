@@ -2,20 +2,60 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/func.js"></script>
 </head>
 <body>
 
-<div class = "div_crearProyecto">
-	<form>
-		Nombre del proyecto:
-		<input type="text" name="nombre_proyecto" value="Mickey">
-		<br>
-		Last name:<br>
-		<input type="text" name="lastname" value="Mouse">
-		<br>
-		Duración del proyecto: <input type="text" value="Submit">
-	</form> 
+<div class="wrapper">
+	<div id = "div_crearProyecto" class="left">
+		<h1>Creación del proyecto</h1>
+		<form>
+			Nombre del proyecto: <br>
+			<input type="text" name="nombre_proyecto" value="">
+			<br>
+			Descripción del proyecto  
+			<br>
+			<textarea name="" id="" cols="30" rows="5"></textarea>
+			<br>
+			Nombre del profesor:<br>
+			<input type="text" name="nombre_profesor" value="">
+			<br>
+			Duración: <br>
+			<input type="text" value="">
+			Curso <br>
+			<select id="select_curso" name="curso" onchange="seleccionarCurso()">
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="nuevo">NUEVO</option>
+		    </select>
+			Tipo de proyecto <br>
+		    <input type="radio" name="gender" value="male" checked> Investigación
+			<input type="radio" name="gender" value="female"> Proyecto programado
+			<input type="radio" name="gender" value="other"> Proyecto Invididual
+			<input type="radio" name="gender" value="other"> Proyecto Grupal
+			<br>
+			<input type="button" value="Guardar">
+		</form> 
+	</div>
+
+	<div id = "agregar" class = "right">
+		Hola
+		<p id="demo"></p>
+	</div>
 </div>
+
+
 
 
 </body>
