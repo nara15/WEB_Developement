@@ -28,6 +28,16 @@
 
 
 /* FORM CSS */
+
+span
+{
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Tahoma, sans-serif;
+}
+
 input[type=text], select
 {
     width: 100%;
@@ -65,4 +75,20 @@ textarea
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+#bntGuardarCurso
+{
+    background-color: #3048E3;
+
+}
+
+#div_agregarCurso
+{
+    background-color: green;
+    padding: 12px;
+    display: none;
 }

@@ -6,7 +6,21 @@ function seleccionarCurso()
     {
     	document.getElementById("demo").innerHTML = "You selected: " + select.length + " "
     	+ select.selectedIndex;
+
+    	var formCurso = document.getElementById("div_agregarCurso");
+    	formCurso.style.display = 'block';
     }
 
-    
+}
+
+function guardarCurso()
+{
+	var formCurso = document.getElementById("div_agregarCurso");
+    formCurso.style.display = 'none';
+
+    var nombre_curso = document.crearCursoForm.nombre_curso.value;
+
+
+
+    document.getElementById("demo").innerHTML = nombre_curso;
 }

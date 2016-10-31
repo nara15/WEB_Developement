@@ -11,19 +11,16 @@
 	<div id = "div_crearProyecto" class="left">
 		<h1>Creación del proyecto</h1>
 		<form>
-			Nombre del proyecto: <br>
+			<span>Nombre del proyecto:</span><br>
 			<input type="text" name="nombre_proyecto" value="">
 			<br>
-			Descripción del proyecto  
-			<br>
-			<textarea name="" id="" cols="30" rows="5"></textarea>
-			<br>
-			Nombre del profesor:<br>
-			<input type="text" name="nombre_profesor" value="">
-			<br>
-			Duración: <br>
+			<span>Descripción del proyecto</span><br>
+			<textarea name="" id="" cols="30" rows="5"></textarea><br>
+			<span>Duración:</span><br>
 			<input type="text" value="">
-			Curso <br>
+			<span>Semestre:</span><br>
+			<input type="text" value="">
+			<span>Curso</span> <br>
 			<select id="select_curso" name="curso" onchange="seleccionarCurso()">
 				<option value="australia">Australia</option>
 				<option value="canada">Canada</option>
@@ -39,19 +36,37 @@
 				<option value="canada">Canada</option>
 				<option value="nuevo">NUEVO</option>
 		    </select>
-			Tipo de proyecto <br>
+		    <br><br>
+			<span>Tipo de proyecto</span> <br>
 		    <input type="radio" name="gender" value="male" checked> Investigación
 			<input type="radio" name="gender" value="female"> Proyecto programado
 			<input type="radio" name="gender" value="other"> Proyecto Invididual
 			<input type="radio" name="gender" value="other"> Proyecto Grupal
-			<br>
+			<br><br>
 			<input type="button" value="Guardar">
 		</form> 
 	</div>
 
-	<div id = "agregar" class = "right">
-		Hola
+	<div class = "right">
+		
 		<p id="demo"></p>
+
+		<div id="div_agregarCurso">
+			<h1>Creación del curso</h1>
+			<form name = "crearCursoForm">
+				<span>Nombre del curso:<span><br>
+				<input type="text" name="nombre_curso" value="">
+				<br>
+				<span>Horario</span><br>
+				<input type="text" name="horario_curso" value="">
+				<br>
+				<span>Nombre del profesor:</span><br>
+				<input type="text" name="curso_profesor" value="">
+				<br>
+				<input id="bntGuardarCurso" type="button" onclick="guardarCurso()" value="Guardar">
+			</form>
+		</div>
+			
 	</div>
 </div>
 
