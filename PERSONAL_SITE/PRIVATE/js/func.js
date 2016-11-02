@@ -24,3 +24,18 @@ function guardarCurso()
 
     document.getElementById("demo").innerHTML = nombre_curso;
 }
+
+function doalert(checkboxElem) 
+{
+	if (checkboxElem.checked)
+	{
+		var element = document.createElement("input");
+		element.setAttribute("type", "text");
+		element.setAttribute("value", "");
+		element.setAttribute("name", "nueva_tecnologia");
+		
+		var foo = document.getElementById("myCheckbox");
+
+		foo.appendChild(element);
+	}   
+}

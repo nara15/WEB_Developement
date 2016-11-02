@@ -29,13 +29,19 @@
 
 /* FORM CSS */
 
-span
+.formCreacionCurso
+{
+	font-size: 1.2em;
+}
+
+.formCreacionCurso div
 {
     font-weight: bold;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-family: Tahoma, sans-serif;
+	margin-bottom: 2px;
 }
 
 input[type=text], select

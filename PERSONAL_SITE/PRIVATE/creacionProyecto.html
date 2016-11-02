@@ -10,17 +10,17 @@
 <div class="wrapper">
 	<div id = "div_crearProyecto" class="left">
 		<h1>Creación del proyecto</h1>
-		<form>
-			<span>Nombre del proyecto:</span><br>
+		<form class="formCreacionCurso">
+			<div>Nombre del proyecto:</div><br>
 			<input type="text" name="nombre_proyecto" value="">
 			<br>
-			<span>Descripción del proyecto</span><br>
+			<div>Descripción del proyecto</div><br>
 			<textarea name="" id="" cols="30" rows="5"></textarea><br>
-			<span>Duración:</span><br>
+			<div>Duración:</div><br>
 			<input type="text" value="">
-			<span>Semestre:</span><br>
+			<div>Semestre:</div><br>
 			<input type="text" value="">
-			<span>Curso</span> <br>
+			<div>Curso</div> <br>
 			<select id="select_curso" name="curso" onchange="seleccionarCurso()">
 				<option value="australia">Australia</option>
 				<option value="canada">Canada</option>
@@ -37,12 +37,20 @@
 				<option value="nuevo">NUEVO</option>
 		    </select>
 		    <br><br>
-			<span>Tipo de proyecto</span> <br>
+			<div>Tipo de proyecto</div> <br>
 		    <input type="radio" name="gender" value="male" checked> Investigación
 			<input type="radio" name="gender" value="female"> Proyecto programado
 			<input type="radio" name="gender" value="other"> Proyecto Invididual
 			<input type="radio" name="gender" value="other"> Proyecto Grupal
 			<br><br>
+			<div>Tecnologías usadas</div><br>
+			<label id="myCheckbox">
+				<input type="checkbox" name="tecnologia" value="java" checked>Java<br>
+				<input type="checkbox" name="tecnologia" value="angularjs"> AngularJS<br>
+				<input type="checkbox" name="tecnologia" value="otro" onchange="doalert(this)"> Otro<br>
+			</label>
+			<br>
+			
 			<input type="button" value="Guardar">
 		</form> 
 	</div>
