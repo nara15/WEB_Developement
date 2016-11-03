@@ -38,16 +38,18 @@
 		    </select>
 		    <br><br>
 			<div>Tipo de proyecto</div> <br>
-		    <input type="radio" name="gender" value="male" checked> Investigación
-			<input type="radio" name="gender" value="female"> Proyecto programado
-			<input type="radio" name="gender" value="other"> Proyecto Invididual
-			<input type="radio" name="gender" value="other"> Proyecto Grupal
+			<label id="tipoProyectoRadio">
+				<input type="radio" name="gender" value="investigacion" checked> Investigación
+				<input type="radio" name="gender" value="programado"> Proyecto programado
+				<input type="radio" name="gender" value="individual"> Proyecto Invididual
+				<input type="radio" name="gender" value="other" onchange="selectOtroTipoProyecto(this)"> Otro
+			</label>
 			<br><br>
 			<div>Tecnologías usadas</div><br>
-			<label id="myCheckbox">
+			<label id="nuevaTecnologiaCheckbox">
 				<input type="checkbox" name="tecnologia" value="java" checked>Java<br>
 				<input type="checkbox" name="tecnologia" value="angularjs"> AngularJS<br>
-				<input type="checkbox" name="tecnologia" value="otro" onchange="doalert(this)"> Otro<br>
+				<input type="checkbox" name="tecnologia" value="otro" onchange="selectOtraTecnologia(this)"> Otro<br>
 			</label>
 			<br>
 			
