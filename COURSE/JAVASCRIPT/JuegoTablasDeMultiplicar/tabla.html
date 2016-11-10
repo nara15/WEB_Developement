@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Una página de prueba</title>
+	<meta charset="UTF-8">
+	<script src="game.js"></script>
+</head>
+	<h1>Práctica de Multiplicaciones</h1>
+	
+	<form>
+		Cantidad de multiplicaciones:  <br> <input id="num" type="number" name="" value="Dame un número">
+		<button id="boton_generar" type="button" onclick="calcularTabla()">Generar</button>	
+	</form>
+
+	<center class="tablaPanel" id="mainPanel">
+		<h2>Tabla de multiplicar</h2>
+		<div id="tablaMultiplicar"></div>
+		<div id="res"></div>
+		<button id ="boton_calificar" type="button" onclick="revisarTabla()">Calificar</button>
+	</center>
+</html>
