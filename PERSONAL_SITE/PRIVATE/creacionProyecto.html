@@ -55,6 +55,7 @@
 			
 			<input type="button" value="Guardar">
 		</form> 
+		
 	</div>
 
 	<div class = "right">
@@ -76,7 +77,12 @@
 				<input id="bntGuardarCurso" type="button" onclick="guardarCurso()" value="Guardar">
 			</form>
 		</div>
-			
+	
+		<form enctype="multipart/form-data" class="subirImagenesForm" action="subir.php">
+		  <input type="file" name="pic" accept="image/*">
+		  <input type="submit">
+		</form>
+	
 	</div>
 </div>
 
