@@ -2,26 +2,33 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/func.js"></script>
+	<link rel="stylesheet" href="css/style_cms.css">
+	<script src="js/process_forms.js"></script>
 </head>
 <body>
+
+<header>
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li style="float:right"><a href="logout.php">Cerrar sesión</a></li>
+	</ul>
+</header>
 
 <div class="wrapper">
 	<div id = "div_crearProyecto" class="left">
 		<h1>Creación del proyecto</h1>
-		<form class="formCreacionCurso">
+		<form onsubmit="return validateFormOnSubmit(this)" class="formCreacionCurso">
 			<div>Nombre del proyecto:</div><br>
-			<input type="text" name="nombre_proyecto" value="">
+			<input type="text" name="nombre_proyecto" value="" >
 			<br>
 			<div>Descripción del proyecto</div><br>
-			<textarea name="" id="" cols="30" rows="5"></textarea><br>
+			<textarea id="" cols="30" rows="5" name="descripcion_proyecto"></textarea><br>
 			<div>Duración:</div><br>
-			<input type="text" value="">
+			<input type="text" name="duracion_proyecto" value="" >
 			<div>Semestre:</div><br>
-			<input type="text" value="">
+			<input type="text" name="semestre_proyecto" value="" >
 			<div>Curso</div> <br>
-			<select id="select_curso" name="curso" onchange="seleccionarCurso()">
+			<select id="select_curso" name="curso_proyecto" onchange="seleccionarCurso()">
 				<option value="australia">Australia</option>
 				<option value="canada">Canada</option>
 				<option value="usa">USA</option>
@@ -39,21 +46,21 @@
 		    <br><br>
 			<div>Tipo de proyecto</div> <br>
 			<label id="tipoProyectoRadio">
-				<input type="radio" name="gender" value="investigacion" checked> Investigación
-				<input type="radio" name="gender" value="programado"> Proyecto programado
-				<input type="radio" name="gender" value="individual"> Proyecto Invididual
-				<input type="radio" name="gender" value="other" onchange="selectOtroTipoProyecto(this)"> Otro
+				<input type="radio" name="tipo_proyecto" value="investigacion" checked> Investigación
+				<input type="radio" name="tipo_proyecto" value="programado"> Proyecto programado
+				<input type="radio" name="tipo_proyecto" value="individual"> Proyecto Invididual
+				<input type="radio" name="tipo_proyecto" value="other" onchange="selectOtroTipoProyecto(this)"> Otro
 			</label>
 			<br><br>
 			<div>Tecnologías usadas</div><br>
 			<label id="nuevaTecnologiaCheckbox">
-				<input type="checkbox" name="tecnologia" value="java" checked>Java<br>
-				<input type="checkbox" name="tecnologia" value="angularjs"> AngularJS<br>
-				<input type="checkbox" name="tecnologia" value="otro" onchange="selectOtraTecnologia(this)"> Otro<br>
+				<input  type="checkbox" name="tecnologia" value="java" checked>Java<br>
+				<input  type="checkbox" name="tecnologia" value="angularjs"> AngularJS<br>
+				<input  type="checkbox" name="tecnologia" value="otro" onchange="selectOtraTecnologia(this)"> Otro<br>
 			</label>
 			<br>
 			
-			<input type="button" value="Guardar">
+			<input type="submit" value="Guardar">
 		</form> 
 		
 	</div>
@@ -85,9 +92,5 @@
 	
 	</div>
 </div>
-
-
-
-
 </body>
 </html>

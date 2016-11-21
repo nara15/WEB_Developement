@@ -52,3 +52,48 @@ function selectOtroTipoProyecto(radioElem)
 		foo.appendChild(element);
 	}
 }
+
+/* Submit form */
+
+function submitAjax(form)
+{
+	var des = form.descripcion_proyecto.value;
+	var nombre = form.nombre_proyecto.value;
+	var duracion = form.duracion_proyecto.value;
+	var semestre = form.semestre_proyecto.value;
+	var curso = form.curso_proyecto.value;
+	var tipo_proyecto = form.tipo_proyecto.value;
+	
+	document.getElementById("demo").innerHTML = des;
+}
+
+
+/* Validating the form */
+function validateFormOnSubmit(form)
+{
+	var res = "";
+	res += validateField(form.nombre_proyecto);
+	res += validateField(form.duracion_proyecto);
+	res += validateField(form.semestre_proyecto);
+	
+	if (res.length >= 1)
+	{
+		return false;
+	}
+	else
+	{
+		submitAjax(form);
+		return false;
+	}
+}
+
+function validateField(field)
+{
+	var error = "";
+	if (field.value.length == 0)
+	{
+		field.style.background = 'Red';
+		var error = "1";
+	}
+	return error;
+}
