@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+@import url("framework.css");
+
+/** CENTRO DE SERVICIOS **************************************************/
+#content_centro_recursos
+{
+	float: left;
+	width: 75%;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#content_centro_recursos #slider figure img{float:left; width:630px; height:300px;}
+#content_centro_recursos #slider figure figcaption
+{
+	display:block; 
+	float:right; 
+	width:300px; 
+	height:300px; 
+	line-height:1.8em;
+	padding:20px; 
+	color:#FFF; 
+	background-color:#333333
+}
+
+
+.split .box, .split .box::after{color:#FFF; background-color:rgba(35,35,35,.8);}
+.split .box.bg-light, .split .box.bg-light::after{color:#232323; background-color:rgba(250,250,250,.85);/* #FAFAFA */}
+.split .box.bg-coloured, .split .box.bg-coloured::after{color:#FFFFFF; background-color:rgba(15,132,170,.65);/* #0F84AA */}
+

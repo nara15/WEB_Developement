@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Contacto</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/style_contacto.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="Resources/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="Resources/style_contacto.css" media="screen" />
 </head>
 <body>
+<script type="text/javascript">
+  function EnviarInfo(){
+	alert("Información enviada");
+  }
+  function cambiarOtro(){
+	document.getElementById("otroRad").disabled = false;
+  }
+</script>
 <div class="main-header">
 	<div><img class="escudo" src="img/escudo.png" /></div>
 	<div class= "titulo">
@@ -74,7 +82,62 @@
 				</tr>
 			</table>
 		</div>
+		
+		<div class="info-item">
+				<div class="info-item-header">
+					<h1>Números Telefonicos</h1>
+					
+				</div>
+				<div class="image group">
+					
+					<div class="contact-item">
+						<p>Tel oficina: <a>24839906</a></p>
+						<p>Tel biblioteca: <a>24839906</a></p>
+						<p>Tel dirección: <a>24839906</a></p>
+						<p>Correo electrónico: <a href ="#">liceo@elroble.co.cr</a></p>
+				   </div>
+				</div>
+			</div>
+		
+		
+		<div class="form-item">
+				<div class="info-item-header">
+					<h1>Contacto</h1>
+					
+				</div>
+				<form >
+				  <label for="nom">Nombre:</label><br /><input type="text" name="fname" placeholder="Jose"><br>
+				 <label for="app">Apellido:</label>  <br /><input type="text" name="lname" placeholder="Garita"><br>
+				  <label for="tel">Numero de teléfono:</label> <br /><input type="tel" name="lname" placeholder="88888888"><br>
+				  <label for="email">Email:</label><br />
+					<input id="email"  name="email" type="email" value="" placeholder="correoej@corrreo.com" /><br />
+				  
+				  
+				  <label for="dirigido">Dirigido a:</label><br />
+				  <div class="radButtons">
+				<input type="radio" name="dirigido" value="male" checked> Dirección<br>
+				<input type="radio" name="dirigido" value="female"> Asistencia de dirección<br>
+				<input type="radio" name="dirigido" value="female"> Orientación<br>
+				<input type="radio" name="dirigido" value="female"> Administración<br>
+				<input type="radio" name="dirigido" value="female"> Becas<br>
+				<input onclick = "cambiarOtro()" type="radio" name="dirigido" value="female"> Otro <br>
+				</div>
+				<input id = "otroRad" type="text" name="otroDirigido" placeholder="Indique cual" disabled><br>
+				  
+				  <label for="message">Mensaje:</label><br />
+					<textarea id="message" class="input" name="message" rows="7" cols="90"></textarea><br />
+				
+				<div class="button"><span><a onclick="EnviarInfo()">Enviar</a></span></div>
+				
+				
+				</form>
+			</div>
+		
 	</div>
+	
+	
+	
+	
 
 </div>
 	
