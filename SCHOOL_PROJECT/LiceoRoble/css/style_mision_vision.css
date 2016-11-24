@@ -1,0 +1,34 @@
+
+.one_third
+{
+	display:block; 
+	float:left; 
+	margin:0 130px 0 0;
+}
+.one_third{width:400px;}
+
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container
+{
+	float: left;
+	width: 85%;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+#container section
+{
+	display:block; 
+	width:85%; 
+	margin-left: 120px; 
+}
+
+
+/* ------Mision and Vision content-----*/
+
+#container #services{}
+#container #services article{}
+#container #services article h2{font-size:25px; margin-bottom:15px;}
+#container #services article p{font-size:20px; margin:0; padding:0;}
+#container #services article img{float:left; width:80px; height:80px; margin:0 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
